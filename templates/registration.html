@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Главная</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="scale">
+        <div class="header">
+            <div class="header-item">
+                <a href="../index.php" class="main-link">Главная</a>
+                <a href="../index.php" class="main-link">Профиль</a>
+            </div>
+            <img src="../templates/img/logo.jpeg" alt="Logo">
+            <div class="header-item">
+                <a href="?registration=processing" class="main-link">Регистрация</a>
+                <a href="?authorization=processing" class="main-link">Вход</a>
+            </div>
+        </div>
+        <div class="main-wrapper">
+            <form class="registration-form" method="POST">
+                <div class="reg-container">
+                    <label for="email">Почта<br>
+                        <input type="email" class="entry" id="email" name="email" required>
+                    </label><br><span class="subtext">*example@gmail.com</span>
+                </div>
+                <div class="reg-container">
+                    <label for="name">Имя<br>
+                        <input type="text" class="entry" id="name" name="name" minlength="2" required>
+                    </label><br><span class="subtext">*На русском языке</span>
+                </div>
+                <div class="reg-container">
+                    <label for="second_name">Фамилия<br>
+                        <input type="text" class="entry" id="lastname" name="lastname" minlength="2" required>
+                    </label><br><span class="subtext">*На русском языке</span>
+                </div>
+                <div class="reg-container">
+                    <label for="login">Придумайте логин<br>
+                        <input type="text" class="entry" id="login" name="login" minlength="4" required>
+                    </label><br><span class="subtext">*Не менее 4 символов, с большой буквы</span>
+                </div>
+                <div class="reg-container">
+                    <label for="password">Придумайте пароль<br>
+                        <input type="password" class="entry" id="password" name="password" minlength="4" required>
+                    </label><br>
+                    <span class="subtext">*6 символов минимум, <br>*1 символ верхнего регистра, не менее 1 цифры</span>
+                </div><br>
+                <input type="submit" class="submit-button" name="Registration" value="Войти">
+            </form>
+        </div>
+        <div style="margin: -25px 50px;">
+            <p>Выполнил | Ларионов Алексей 472гр.</p>
+        </div>
+    </div>
+</body>
+
+</html>
