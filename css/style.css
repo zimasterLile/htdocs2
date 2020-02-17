@@ -2,6 +2,7 @@
 
 *
 {
+
     margin: 0 auto;
     padding: 0;
     font-family: 'Oswald', sans-serif;
@@ -44,8 +45,17 @@ button
     width: 1280px;
     height: 150px;
     display: grid;
-    grid-template-columns: 330px 1fr 300px;
+    grid-template-columns: 1fr;
     margin-top: 10px;
+}
+
+input[name="button"] {
+    border: none;
+    background-color: lightgray;
+    color: white;
+    font-size: 36px;
+    width: 25px;
+    height: 50px;
 }
 
 .main-link
@@ -57,6 +67,24 @@ button
     border: none;
 }
 
+.apl-stat {
+    width: 250px;
+    height: 250px;
+}
+
+.apl-stat td{
+
+    border-top: 1px solid black;
+}
+
+.apl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+a {
+    text-decoration: none;
+}
 
 .header-item
 {
@@ -170,6 +198,12 @@ input[value="Войти"]:hover {
         border-bottom: 1px solid black;
         width: 100px;
     }
+}
+
+.footer {
+    width: 1280px;
+    display: float;
+    float: left;
 }
 
 .error-container

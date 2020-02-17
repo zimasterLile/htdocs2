@@ -7,11 +7,11 @@ class Database
     static public function connect()
     {
         $host = 'localhost';
-        $database = 'banners';
+        $database = '#';
         $user = 'root';
         $password = '';
         $link = mysqli_connect($host, $user, $password, $database);
-        $link->set_charset('UTF-8');
+        $link->set_charset('utf8');
         return $link;
     }
 }
