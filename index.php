@@ -1,3 +1,3 @@
 <?php
 
-require_once 'application/views/start.php';
+require_once 'application/start.php';

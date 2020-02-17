@@ -14,6 +14,6 @@ class View
         }
         */
 
-        include 'application/views/'.$template_view;
+        include 'application/views/templates/'.$template_view;
     }
 }
