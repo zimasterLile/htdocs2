@@ -18,7 +18,9 @@ class Model
 
     public function del_data($name_table,$id) //, $id
     {
-        $res =  mysqli_query($this -> link, "DELETE FROM `$name_table` WHERE `id` = $id"); //`portfolio`S
+        //$id = $_POST['id'];
+
+        $res =  mysqli_query($this -> link, "DELETE FROM `$name_table` WHERE `id` =".$id); //`portfolio`
         if(!$res) {
             die(mysqli_error($this->link));
         }
