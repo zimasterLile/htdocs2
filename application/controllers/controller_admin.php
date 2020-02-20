@@ -25,8 +25,6 @@ class Controller_Admin extends Controller
                 $_SESSION['admin'] = 'admin';
                 var_dump($_SESSION['admin'] . ' сесия запущена');
             }
-
-            $this->model->admin_start();
         }
     }
 }
