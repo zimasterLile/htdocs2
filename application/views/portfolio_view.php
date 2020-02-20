@@ -29,11 +29,13 @@
     }
 
     ?>
+    <?php if(isset($_SESSION['admin']) && $_SESSION['admin'] == 'admin') { ?>
+        <form action="/portfolio/del_data" method="POST">
+            <input style="display: inline;" type='text' name='pole1' size='2' maxlength='5' value='1'>
+            <input style="cursor:pointer;display: inline;" type="submit" name="button_id" value="X" />
+        </form>
+    <?php } ?>
 
-    <form action="/portfolio/del_data" method="POST">
-        <input style="display: inline;" type='text' name='pole1' size='2' maxlength='5' value='1'>
-        <input style="cursor:pointer;display: inline;" type="submit" name="button_id" value="X" />
-    </form>
 
     <!--    INSERT INTO `portfolio`(`year`, `site`, `description`) VALUES ('2222','frefrevg','grebvgrevg')-->
     <!--    <a href="/portfolio/del_data">X</a>-->

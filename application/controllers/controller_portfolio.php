@@ -19,14 +19,8 @@ class Controller_Portfolio extends Controller
 
     public function action_del_data()
     {
-//        if (isset($_POST, $_POST['id'])) {
-//            return $this->model->del_data("portfolio",$_POST['id']);
-//        }
-
         if (isset($_POST['button_id'])) {
             $_POST['id'] = $_POST['pole1'];
-            //return $_POST['id'];
-            var_dump($_POST['id']);
         }
         if (isset($_POST, $_POST['id'])) {
             $this->model->del_data("portfolio", $_POST['id']);

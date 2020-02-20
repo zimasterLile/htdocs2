@@ -25,5 +25,17 @@ class Model
             die(mysqli_error($this->link));
         }
     }
+
+    public function admin_start()
+    {
+//        if(isset($_SESSION['admin']) && $_SESSION['admin'] == 'admin'){
+//            var_dump('Текущая сесия');
+//            var_dump($_SESSION['admin']);
+//        }
+//        else{
+//            $_SESSION['admin'] = 'admin';
+//            var_dump('сесия запущена');
+//        }
+    }
 }
 ?>
