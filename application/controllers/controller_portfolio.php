@@ -22,7 +22,7 @@ class Controller_Portfolio extends Controller
 //        if (isset($_POST, $_POST['id'])) {
 //            return $this->model->del_data("portfolio",3);
 //        }
-        return $this->model->del_data("portfolio");
+        return $this->model->del_data("portfolio",id);
     }
 }
 

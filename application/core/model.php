@@ -16,9 +16,9 @@ class Model
         return mysqli_query($this -> link, "SELECT * FROM `$name_table`"); //`portfolio`
     }
 
-    public function del_data($name_table) //, $id
+    public function del_data($name_table,$id) //, $id
     {
-        $res =  mysqli_query($this -> link, "DELETE FROM `$name_table` WHERE `id` = 4"); //`portfolio`S
+        $res =  mysqli_query($this -> link, "DELETE FROM `$name_table` WHERE `id` = $id"); //`portfolio`S
         if(!$res) {
             die(mysqli_error($this->link));
         }
