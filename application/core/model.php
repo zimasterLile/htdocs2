@@ -1,24 +1,23 @@
 <?php
-
-
 class Model
 {
-    public function get_data()
-    {
-        Database::connect();
+    function __construct() {
+        mysqli_set_charset($this -> link = new mysqli(
+            'localhost',
+            'root',
+            '',
+            'praktika'
+        ), "utf8");
     }
-}
 
-class Database
-{
-    static public function connect()
+    public function get_data($name_table) //$name_table
     {
-        $host = 'localhost';
-        $database = '#';
-        $user = 'root';
-        $password = '';
-        $link = mysqli_connect($host, $user, $password, $database);
-        $link->set_charset('utf8');
-        return $link;
+//        $name_table = 'portfolio';
+
+        //'SELECT Name, Population FROM City ORDER BY Population DESC LIMIT 5'
+        return mysqli_query($this -> link, "SELECT * FROM `$name_table`"); //`portfolio`
+
+
     }
 }
+?>

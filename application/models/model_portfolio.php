@@ -1,7 +1,6 @@
 <?php
-
-
-class Model_Portfolio
+class Model_Portfolio extends Model
 {
 
 }
+?>

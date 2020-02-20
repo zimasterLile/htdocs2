@@ -1,6 +1,6 @@
 <?php
-
-class Route {
+class Route
+{
     static function start()
     {
         // контроллер и действие по умолчанию
@@ -76,3 +76,4 @@ class Route {
         header('Location:'.$host.'404');
     }
 }
+?>
