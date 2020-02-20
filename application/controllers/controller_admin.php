@@ -10,20 +10,26 @@ class Controller_Admin extends Controller
 
     function action_index()
     {
-        $this->view->generate('admin_view.php', 'template_view.php');
+        //$data = $this->model->get_data("user");
+        $this->view->generate('admin_view.php', 'template_view.php'); //, $data
     }
 
     public function action_admin_start()
     {
         if (isset($_POST, $_POST['button_admin'])) {
+            $data = $this->model->get_data("user");
+            $login = $_POST['loginAdmin'];
+            $password = $_POST['passwordAdmin'];
 
-            if(isset($_SESSION['admin']) && $_SESSION['admin'] == 'admin'){
+            while ($row = mysqli_fetch_assoc($data)) {
+                if ($login == $row['login'] && $password == $row['password'] && $row['admin'] == 1){
+                    $_SESSION['admin'] = $row['login'];
+                }
+            }
+
+            if(isset($_SESSION['admin'])){
                 var_dump('Текущая сесия');
                 var_dump($_SESSION['admin']);
-            }
-            else{
-                $_SESSION['admin'] = 'admin';
-                var_dump($_SESSION['admin'] . ' сесия запущена');
             }
         }
     }
