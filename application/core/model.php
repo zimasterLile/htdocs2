@@ -12,18 +12,15 @@ class Model
 
     public function get_data($name_table)
     {
-        //'SELECT Name, Population FROM City ORDER BY Population DESC LIMIT 5'
-        return mysqli_query($this -> link, "SELECT * FROM `$name_table`"); //`portfolio`
+        //return mysqli_query($this -> link, "SELECT * FROM `$name_table`");
     }
 
-    public function del_data($name_table,$id) //, $id
+    public function del_data($name_table,$id)
     {
-        //$id = $_POST['id'];
-
-        $res =  mysqli_query($this -> link, "DELETE FROM `$name_table` WHERE `id` =".$id); //`portfolio`
-        if(!$res) {
-            die(mysqli_error($this->link));
-        }
+//        $res =  mysqli_query($this -> link, "DELETE FROM `$name_table` WHERE `id` =".$id);
+//        if(!$res) {
+//            die(mysqli_error($this->link));
+//        }
     }
 }
 ?>

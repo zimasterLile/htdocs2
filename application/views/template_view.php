@@ -11,6 +11,7 @@
         <li class="first active"><a href="/">Главная</a></li>
         <li><a href="/services">Услуги</a></li>
         <li><a href="/portfolio">Портфолио</a></li>
+        <li><a href="/user">user</a></li>
         <li class="last"><a href="/contacts">Контакты</a></li>
     </ul>
     <br class="clearfix" />
