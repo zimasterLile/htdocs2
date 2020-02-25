@@ -9,35 +9,37 @@
     </tr>
     <?php
 
-    //    while ($row = mysqli_fetch_assoc($data)) {
-    /*        echo '<tr><td>' . $row['id'] . '</td><td>' . $row['year'] . '</td><td>' . $row['site'] . $row['description'] . '<a href="/portfolio/del_data/?id=<?= $row[\'id\']; ?>">Удалить</a></td></tr>';*/
-    //    }
-
-    ?>
-
-    <?php
-
     while ($row = mysqli_fetch_assoc($data)) {
         ?>
         <tr>
-            <td><?= $row['id'] ?></td>
             <td><?= $row['year'] ?></td>
-            <td><?= $row['site'] ?><?= $row['description'] ?>
+            <td><?= $row['site'] ?></td>
+            <td><?= $row['description'] ?><?= $row['description'] ?>
             </td>
         </tr>
         <?php
     }
 
     ?>
-    <?php if(isset($_SESSION['user']) && $_SESSION['user'] == 'admin') { ?>
+    <?php if (isset($_SESSION['user']) && $_SESSION['user'] == 'admin') { ?>
         <form action="/portfolio/del_data" method="POST">
             <input style="display: inline;" type='text' name='pole1' size='2' maxlength='5' value='1'>
-            <input style="cursor:pointer;display: inline;" type="submit" name="button_id" value="X" />
+            <input style="cursor:pointer;display: inline;" type="submit" name="button_id" value="X"/>
         </form>
     <?php } ?>
-
-
-    <!--    INSERT INTO `portfolio`(`year`, `site`, `description`) VALUES ('2222','frefrevg','grebvgrevg')-->
-    <!--    <a href="/portfolio/del_data/del=ok&?id=--><? //= $row['id']; ?><!--">Удалить</a>-->
 </table>
 </p>
+
+<style>
+    table {
+        border: 1px solid black;
+    }
+
+    td {
+        border: 1px solid black;
+    }
+
+    tr {
+        border: 1px solid black;
+    }
+</style>

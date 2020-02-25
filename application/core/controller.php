@@ -1,5 +1,8 @@
 <?php
-class Controller {
+
+
+class Controller
+{
 
     public $model;
     public $view;
@@ -12,10 +15,5 @@ class Controller {
     function action_index()
     {
     }
-
-    function action_logout(){
-        session_destroy();
-        header("location: /");
-    }
 }
-?>
+
