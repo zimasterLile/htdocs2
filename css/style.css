@@ -1,0 +1,101 @@
+﻿body {
+    background-color: wheat;
+}
+
+.background_color_admin {
+    background-color: #4a4640;
+}
+
+/*Новости_и_коментарии------------------------------------------------------------------------------------------------*/
+.news-block {
+    /*background-color: #4a4640;*/
+    border: 1px solid black;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+/*Шапка---------------------------------------------------------------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#block-body {
+    width: auto;
+    margin: 5px auto;
+    height: 80px;
+    margin-bottom: 30px;
+    background-color: black;
+}
+
+#block-content {
+    width: auto;
+    height: auto;
+    min-height: 500px;
+}
+.logo {
+    width: 200px;
+    float: left;
+    height: 80px;
+}
+
+.top-menu {
+    width: auto;
+    height: 80px;
+    float: left;
+}
+.top-menu ul li {
+    list-style: none;
+    float: left;
+    text-align: center;
+}
+.top-menu ul li a {
+    display: block;
+    width: 171px;
+    text-decoration: none;
+    font-family:  "Exo2-Medium", sans-serif;
+    font-size: 17px;
+    color: white;
+    height: 55px;
+    padding-top: 25px;
+    cursor: pointer;
+}
+.top-menu ul li a:hover {
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    background: #00ADE4;
+}
+.block-top-auth {
+    width: 100px;
+    float: left;
+    margin-left: 40px;
+    height: 80px;
+}
+.block-top-auth p {
+    margin-top: 12px;
+    text-align: center;
+    margin-bottom: 8px;
+
+}
+.block-top-auth a {
+    text-decoration: none;
+    color: white;
+    font-family:  "Exo2-Medium", sans-serif;
+    font-size: 15px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.block-top-auth a:hover {
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    color: #00ADE4;
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
